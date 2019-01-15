@@ -9,7 +9,10 @@
 
 window.cipher = {
   encode: () => {
-  },
+    for(let i=0; i<message.length; i++ {
+     
+    });
+    },
   decode: () => {
   },
 };
