@@ -7,7 +7,7 @@
 document.getElementById("code").addEventListener("click", () => {
 //Tome el valor del mensaje y lo pongo en mssgvalue    
     const mssgValue = message.value;
-     offset = offset.value      
+    offset = offset.value      
 //Ejecutar la funcion Encode
     window.cipher.encode(offset, mssgValue)
 //Uso InnerHTML para verificar mensaje recibido. 

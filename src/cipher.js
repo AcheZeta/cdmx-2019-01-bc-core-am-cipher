@@ -9,17 +9,18 @@
 
 window.cipher = {
   encode: (offset, mssgValue) => {
-    console.log(offset, mssgValue)
-   //Tome mssgvalue y convierte a mayúsculas & Ascii  
-   //  const upperCharMsg = mssgValue.toUpperCase().charCodeAt()
-   
    //variable vacia   
-   //for (let i=0; i=mssgValue.length; i++)
-   // {
-  
-   
-    //};
+   let cifradoC = "";    
+   for (let i=0; i<=mssgValue.length; i++)
+    {
+      const ascii = mssgValue.toUpperCase(i).charCodeAt(i);
+      const convertir = (ascii-65+offset)%26+65;
+      const nuevoCodigo = String.fromCharCode(convertir);
+      cifradoC += nuevoCodigo 
+      console.log(cifradoC)
+    };
     },
+
   decode: () => {
   },
 };
