@@ -8,10 +8,17 @@
 //  2) debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33
 
 window.cipher = {
-  encode: () => {
-    for(let i=0; i<message.length; i++ {
-     
-    });
+  encode: (offset, mssgValue) => {
+    console.log(offset, mssgValue)
+   //Tome mssgvalue y convierte a mayúsculas & Ascii  
+   //  const upperCharMsg = mssgValue.toUpperCase().charCodeAt()
+   
+   //variable vacia   
+   //for (let i=0; i=mssgValue.length; i++)
+   // {
+  
+   
+    //};
     },
   decode: () => {
   },
