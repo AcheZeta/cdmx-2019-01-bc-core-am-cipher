@@ -21,10 +21,22 @@ window.cipher = {
 
       cifradoC += nuevoCodigo 
     }
-    console.log(cifradoC)
     return cifradoC
     },
 
-  decode: () => {
+  decode:(offsetD, messageD) => {
+      offsetD = parseInt(offsetD)
+      //variable vacia    
+     let descifrado = ""; 
+     for (let i=0; i < messageD.length; i++)
+      {
+        let ascii = messageD[i].charCodeAt();
+        let deco = (ascii+65-offsetD)%26+65;
+  
+        let descod = String.fromCharCode(deco);
+  
+        descifrado += descod 
+      }
+      return descifrado
   },
 };
