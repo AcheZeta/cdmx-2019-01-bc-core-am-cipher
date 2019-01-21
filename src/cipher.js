@@ -5,7 +5,7 @@ window.cipher = {
       for (let i=0; i < message2.length; i++)
     {
       let ascii = message2[i].charCodeAt();
-      let convertir = (ascii-65+  offset2)%26+65;
+      let convertir = (ascii-65+offset2)%26+65;
       let nuevoCodigo = String.fromCharCode(convertir);
       cifradoC += nuevoCodigo 
     }
