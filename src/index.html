@@ -7,26 +7,29 @@
    <link rel="stylesheet" href="style.css" />
   </head>  
   <body>
-      <div class= "contenido", id="root">           
-        <h1>Cifrando</h1> 
-        <div id="form" class="form">
-    <form>
-      Ingresa tu código. 
-      <br>
-      <input id="mssg" type="text" name="message">
-      <br>
-      Escribe tu pista<br>
-      <input id="offset" type="number" name="offset"> 
-      <br>
-      <input id="code" type="button" value="cifrar">
-      <input id="decode" type="button" value="Descifrar">
-      <br>
-    </form>
-    </div>
-    </div>
-    <br>
+     <div class="container">
+        <div class= "contenido" id="root">           
+            <h1>Cifrando</h1> 
+            <div id="form" class="form">
+        <form>
+          Ingresa tu Mensaje. 
+          <br>
+          <input id="mssg" type="text" name="message">
+          <br>
+          Escribe tu pista<br>
+          <input id="offset" type="number" name="offset" min="1"> 
+          <br>
+          <input id="code" type="button" value="cifrar">
+          <input id="decode" type="button" value="Descifrar">
+          <br>
+        </form>
+        </div>
+        </div>
+        <br>
+     </div>
     
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
+
