@@ -1,5 +1,17 @@
-:root {
-   
-    background: #FDF5E6;
-   
-  } 
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+#root {
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://bit.ly/2DvDpq0');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.contenido{
+width: 100%;
+margin: 10px;
+text-align: center;
+}
