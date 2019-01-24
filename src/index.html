@@ -4,38 +4,32 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <title>CipherFest</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="contenido" id="root">
-    </br>
-    </br>
-    </br>
-    </br>
-     <div class ="titulo"> <h1>Descifra tu música</h1> </div>
-      <div id="form" class="form">
-        <form>
-          Ingresa tu Mensaje.
-          <br>
-          <input id="mssg" type="text" name="message">
-          <br>
-          Escribe tu pista<br>
-          <input id="offset" type="number" name="offset" min="1">
-          <br>
-          <input id="code" type="button" value="cifrar">
-          <input id="decode" type="button" value="Descifrar">
-          <br>
-        </form>
-      </div>
-    </div>
-    <br>
+   
+    <h1>Descifra tu música</h1>
+    <form id="form" class="form">
+      Ingresa tu Mensaje.
+      <br>
+      <input id="mssg" type="text" name="message">
+      <br>
+      Escribe tu pista<br>
+      <input id="offset" type="number" name="offset" min="1">
+      <br>
+      <input id="code" type="button" value="cifrar">
+      <input id="decode" type="button" value="Descifrar">
+      <br>
+
+    </form>
   </div>
 
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>
+
 </html>
