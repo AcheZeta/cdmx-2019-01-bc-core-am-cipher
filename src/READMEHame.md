@@ -2,25 +2,78 @@
 
 _"Cifrar significa codificar. El cifrado César es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla."_
 
-Este Cipher es una herramienta para usuarios y desarrolladores que desean generar códigos que pueden ser canjeados por sus seguidores.
+## Resumen del proyecto
+
+En este primer proyecto servirá para que el usuario pueda cifrar y descifrar un texto (_mensaje_)indicando un desplazamiento específico de caracteres (_offset_).
+
+##Consideraciones: 
+- Proyecto individual.
+- El proyecto fue entregado subiendo el código a GitHub (commit/push) y la interfaz fue desplegada usando GitHub pages. 
+- Tiempo para completarlo: 2 semanas divididas en 2 sprints (1 entrega cada viernes).
+- Uso de Css, HTML y Javascript.
+
 
 ## Comenzando 🚀
-Aquí encontraras los pre-requisitos y las intrucciones de Instalación: 📋🔧
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+## ¿Para quién? 
+Este cipher es una herramienta diseñada para personas interesadas en generar códigos que regalarle a sus seguidores, clientes o amigos para obtener premios.
 
-    *Antes que nada, asegúrate de tener un editor de texto, yo utilicé Visual Code, pero Sublime Text, Atom o cualquier otro de tu preferencia te puede servir.
-    *Para ejecutar los comandos a continuación necesitarás una UNIX Shell, que es un programita que interpreta líneas de comando (command-line interpreter) así como tener git instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS, ya tienes una shell (terminal) instalada por defecto (y probablemente git también). Si usas Windows puedes usar Git bash, aunque recomendaría que consideres probar penguin GNU/Linux como tu Sistema Operativo.
-    *Haz tu propio fork de este repositorio de tu cohort.
-    *Clona tu fork a tu computadora (copia local).
-    *Instala las dependencias del proyecto con el comando npm install. Esto asume que has instalado Node.js (que incluye npm).
+Los usuarios deberán ingresar la palabra que desean cifrar, sin espacio y sin carácteres especiales para cifrarla.
+Después el código será compartido por medio de boletos electrónicos o físicos con una pista para poderlo cambiar. 
+Son necesarias estas dos partes (Pista y Código) para poderlo descifrar. 
 
 Mira **Deployment** para conocer como desplegar el proyecto.
+
+#### Scripts / Archivos
+
+* `README.md`: Explica cómo descargar, instalar y ejecutar la aplicación
+  así como una introducción a la aplicación, su funcionalidad y decisiones de
+  diseño que tomaron.
+* `src/index.html`: este es el punto de entrada a tu aplicación. Este archivo
+  debe contener tu _markup_ (HTML) e incluir el CSS y JavaScript necesario.
+* `src/cipher.js`: acá debes implementar el objeto cipher, el cual debe estar
+  _exportado_ en el objeto global (`window`). Este objeto (`cipher`) debe
+  contener dos métodos:
+  - `cipher.encode(offset, string)`: `offset` es el número de posiciones que
+    queremos mover a la derecha en el alfabeto y `string` el mensaje (texto)
+    que queremos cifrar.
+  - `cipher.decode(offset, string)`: `offset` es el número de posiciones que
+    queremos mover a la izquierda en el alfabeto y `string` el mensaje
+    (texto) que queremos descifrar.
+* `src/index.js`: acá debes escuchar eventos del DOM, invocar `cipher.encode()`
+  o `cipher.decode()` según sea necesario y actualizar el resultado en la UI.
+* `test/cipher.spec.js`: este archivo contiene algunos tests de ejemplo y acá
+  tendrás que implementar los tests(pruebas ) para `cipher.encode()` y `cipher.decode()`.
+
+##Consideraciones Técnicas 
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+
+1. Antes que nada, asegúrate de tener un :pencil: editor de texto en
+   condiciones, yo utilicé [Visual Code](https://code.visualstudio.com/) pero también puedes usar [Atom](https://atom.io/),[Sublime Text](https://www.sublimetext.com) o cualquier otro de tu preferencia.
+2. Para ejecutar los comandos a continuación necesitarás una :shell:
+   [UNIX Shell](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/shell),
+   que interpreta líneas de comando (command-line
+   interpreter) así como tener [git](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/scm/01-git)
+   instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS,
+   ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git`
+   también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win),
+   aunque recomendaría que consideres probar :penguin: GNU/Linux como tu Sistema Operativo.
+3. Haz tu propio :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/)
+   de [ este repositorio](https://github.com/Laboratoria/cdmx-2019-01-bc-core-am-cipher) de tu cohort, tus _coaches_ te compartirán un _link_ a un repositorio y te 
+   darán acceso de lectura en ese repo.
+4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
+   tu _fork_ a tu computadora (copia local).
+5. 📦 Instala las dependencias del proyecto con el comando `npm
+   install`. Esto asume que has instalado [Node.js](https://nodejs.org/) (que
+   incluye [npm](https://docs.npmjs.com/)).
+6. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
+   pruebas unitarias (unit tests) con el comando `npm run test`.
+7. A codear se ha dicho! :rocket:
 
 
 ## Ejecutando las pruebas ⚙️
 
-Si todo ha ido bien, deberías poder ejecutar las pruebas unitarias (unit tests) con el comando npm run test.
+Si todo ha ido bien, deberías poder ejecutar las pruebas unitarias (unit tests) con el comando npm run test y pasarlas correctamente una vez completado el código.
 
 ### Analice las pruebas end-to-end 🔩
 
@@ -33,54 +86,24 @@ Cipher.Decode debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRST
 
 Por ejemplo _window.cipher = {}_ para el test ya que cipher se encuentra detro del objeto window. 
 
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
 ## Deployment 📦
 
 Visita el proyecto en [GitHubPages](https://achezeta.github.io/cdmx-2019-01-bc-core-am-cipher/src/index.html)
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
 * [Visual Studio Code](https://code.visualstudio.com/).
-* Vanilla Javascrip.
+* [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).
+* GitHub y GitHub Pages
+
 
 ## Contribuyendo 🖇️
 
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Por favor lee el [CONTRIBUTING.md]  (https://github.com/Laboratoria/curricula-js/blob/master/CONTRIBUTING.md) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
 
 ## Expresiones de Gratitud 🎁
 
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
-
-
-
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+* Al gran squad que fue "MemexiCode" 📢
+* A nuetras Jedi Steph. 
+* A los coach de Laboratoria 🤓.
+* Al Equipo y compañeras en general. 
