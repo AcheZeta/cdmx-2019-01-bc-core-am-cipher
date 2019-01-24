@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Questrial');
-
 *, body{
   margin: 0;
   padding: 0;
+  font-family: 'Questrial', sans-serif;
+  text-align: center;
+}
+.titulo {
+  margin: 0;
 }
 .container {
   height: 100vh;
@@ -14,9 +17,9 @@
   margin: 0%
 }
 
-.contenido{
-width: 100%;
-text-align: center;
+.root{
+  width: 100%;
+  margin-top: 50%;
 }
 
 
