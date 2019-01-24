@@ -7,21 +7,59 @@
 
 body{
   height: 100vh;
-  background-image: url('https://bit.ly/2DvDpq0');
+  background-image: url('assets/art-background.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
-  margin: 0%
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: black;
+  font-size: 250%
+}
+
+form {
+  margin-top: 2%;
+  color: black;
+  font-size: 120%;  
+}
+input {
+  border: 1px solid #ffb7b8; 
+  font-size: 90%;
 }
 
 .container {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
-.root{
-  width: 100%;
-  margin-top: 50%;
+.button{
+  color: #7FFFD4;
+  background: transparent; 
+  border-radius: 6px;
+  border: none;
+      color: white;
+      padding: 2%;
+      text-align: center;
+      display: inline-block;
+      font-size: 90%;
+      margin: 2%; 
+      text-transform: uppercase;
 }
+.button {
+      background-color: #bfe7e0; 
+      color: black; 
+      border: 2px solid #ffb7b8;
+}
+.button:hover {
+  background-color: #ffb7b8;
+  color: black;
+  border: 2px solid #bfe7e0; 
+}
+}
+
+
 
 
