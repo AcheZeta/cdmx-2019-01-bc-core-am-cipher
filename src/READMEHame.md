@@ -1,53 +1,37 @@
-#Cifrado César Hame.
+## Descifra tu Música: Cifrado César.
 
 _"Cifrar significa codificar. El cifrado César es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla."_
 
-Este Cipher es una herramienta para usuarios y desarrolladores que desean generar mensajes cifrados e impementarlo para regalar premios a sus seguidores.  
+Este Cipher es una herramienta para usuarios y desarrolladores que desean generar códigos que pueden ser canjeados por sus seguidores.
 
 ## Comenzando 🚀
+Aquí encontraras los pre-requisitos y las intrucciones de Instalación: 📋🔧
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+
+    *Antes que nada, asegúrate de tener un editor de texto, yo utilicé Visual Code, pero Sublime Text, Atom o cualquier otro de tu preferencia te puede servir.
+    *Para ejecutar los comandos a continuación necesitarás una UNIX Shell, que es un programita que interpreta líneas de comando (command-line interpreter) así como tener git instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS, ya tienes una shell (terminal) instalada por defecto (y probablemente git también). Si usas Windows puedes usar Git bash, aunque recomendaría que consideres probar penguin GNU/Linux como tu Sistema Operativo.
+    *Haz tu propio fork de este repositorio de tu cohort.
+    *Clona tu fork a tu computadora (copia local).
+    *Instala las dependencias del proyecto con el comando npm install. Esto asume que has instalado Node.js (que incluye npm).
 
 Mira **Deployment** para conocer como desplegar el proyecto.
 
 
-### Pre-requisitos 📋
-
-_Que cosas necesitas para instalar el software y como instalarlas_
-
-```
-Da un ejemplo
-```
-
-### Instalación 🔧
-
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
 ## Ejecutando las pruebas ⚙️
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+Si todo ha ido bien, deberías poder ejecutar las pruebas unitarias (unit tests) con el comando npm run test.
 
 ### Analice las pruebas end-to-end 🔩
 
-_Explica que verifican estas pruebas y por qué_
+Las pruebas Unitarias verifican: 
+Cipher debería ser un objeto.
+Cipher.Encode debería ser una función.
+Cipher.Encode debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33'.
+Cipher.Decode debería ser una función. 
+Cipher.Decode debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33.
 
-```
-Da un ejemplo
-```
+Por ejemplo _window.cipher = {}_ para el test ya que cipher se encuentra detro del objeto window. 
 
 ### Y las pruebas de estilo de codificación ⌨️
 
@@ -59,15 +43,14 @@ Da un ejemplo
 
 ## Deployment 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
+Visita el proyecto en [GitHubPages](https://achezeta.github.io/cdmx-2019-01-bc-core-am-cipher/src/index.html)
 
 ## Construido con 🛠️
 
 _Menciona las herramientas que utilizaste para crear tu proyecto_
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+* [Visual Studio Code](https://code.visualstudio.com/).
+* Vanilla Javascrip.
 
 ## Contribuyendo 🖇️
 
