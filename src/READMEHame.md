@@ -97,8 +97,15 @@ Visita el proyecto en [GitHubPages](https://achezeta.github.io/cdmx-2019-01-bc-c
 * GitHub y GitHub Pages :octocat:
 
 ### UX 🔍
+La Aplicación se apoya del uso de códigos en boletos y de la aplicación para realizar el canje y creación de dichos códigos: 
+
+![Boleto](https://raw.githubusercontent.com/AcheZeta/cdmx-2019-01-bc-core-am-cipher/master/src/assets/1.png)
+
+![webApp](https://raw.githubusercontent.com/AcheZeta/cdmx-2019-01-bc-core-am-cipher/master/src/assets/Screenshot_2019-01-25%20CipherFest.png)
+
 
 Visita el siguiente documento para conocer más del proceso de  [UX Reserch](https://achezeta.github.io/cdmx-2019-01-bc-core-am-cipher/src/index.html)https://docs.google.com/document/d/1kfiqATT_zd25mmglmEIcEatjwm_hwRIAwFUgkzqqusc/edit?usp=sharing
+
 
 
 
