@@ -13,10 +13,10 @@ En este primer proyecto servirá para que el usuario pueda cifrar y descifrar un
 - Uso de Css, HTML y Javascript.
 
 
-## Comenzando 🚀
+### Comenzando 🚀
 
 ## ¿Para quién? 
-Este cipher es una herramienta diseñada para personas interesadas en generar códigos que regalarle a sus seguidores, clientes o amigos para obtener premios.
+Este cipher es una herramienta diseñada para personas interesadas en generar códigos que regalarle a sus seguidores, clientes o amigos y que puedan obtener premios.
 
 Los usuarios deberán ingresar la palabra que desean cifrar, sin espacio y sin carácteres especiales para cifrarla.
 Después el código será compartido por medio de boletos electrónicos o físicos con una pista para poderlo cambiar. 
@@ -24,7 +24,7 @@ Son necesarias estas dos partes (Pista y Código) para poderlo descifrar.
 
 Mira **Deployment** para conocer como desplegar el proyecto.
 
-#### Scripts / Archivos
+## Scripts / Archivos
 
 * `README.md`: Explica cómo descargar, instalar y ejecutar la aplicación
   así como una introducción a la aplicación, su funcionalidad y decisiones de
@@ -75,7 +75,7 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 
 Si todo ha ido bien, deberías poder ejecutar las pruebas unitarias (unit tests) con el comando npm run test y pasarlas correctamente una vez completado el código.
 
-### Analice las pruebas end-to-end 🔩
+### Analisis las pruebas end-to-end 🔩
 
 Las pruebas Unitarias verifican: 
 Cipher debería ser un objeto.
@@ -94,7 +94,12 @@ Visita el proyecto en [GitHubPages](https://achezeta.github.io/cdmx-2019-01-bc-c
 
 * [Visual Studio Code](https://code.visualstudio.com/).
 * [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).
-* GitHub y GitHub Pages
+* GitHub y GitHub Pages :octocat:
+
+### UX 🔍
+
+Visita el siguiente documento para conocer más del proceso de  [UX Reserch](https://achezeta.github.io/cdmx-2019-01-bc-core-am-cipher/src/index.html)https://docs.google.com/document/d/1kfiqATT_zd25mmglmEIcEatjwm_hwRIAwFUgkzqqusc/edit?usp=sharing
+
 
 
 ## Contribuyendo 🖇️
@@ -103,7 +108,7 @@ Por favor lee el [CONTRIBUTING.md]  (https://github.com/Laboratoria/curricula-js
 
 ## Expresiones de Gratitud 🎁
 
-* Al gran squad que fue "MemexiCode" 📢
-* A nuetras Jedi Steph. 
-* A los coach de Laboratoria 🤓.
+* Al gran squad que fue "MemexiCode" 🔥
+* A nuetras Jedi Steph. 🌟
+* A los coach de Laboratoria. 👩‍💻 👨‍💻
 * Al Equipo y compañeras en general. 
