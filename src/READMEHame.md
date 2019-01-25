@@ -75,7 +75,7 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 
 Si todo ha ido bien, deberías poder ejecutar las pruebas unitarias (unit tests) con el comando npm run test y pasarlas correctamente una vez completado el código.
 
-### Analisis las pruebas end-to-end 🔩
+### Analisis las pruebas 🔩
 
 Las pruebas Unitarias verifican: 
 Cipher debería ser un objeto.
@@ -98,24 +98,19 @@ Visita el proyecto en [GitHubPages](https://achezeta.github.io/cdmx-2019-01-bc-c
 
 ### UX 🔍
 La Aplicación se apoya del uso de códigos en boletos y de la aplicación para realizar el canje y creación de dichos códigos: 
+Visita el siguiente documento para conocer más del proceso de  [UX Reserch](https://achezeta.github.io/cdmx-2019-01-bc-core-am-cipher/src/index.html)https://docs.google.com/document/d/1kfiqATT_zd25mmglmEIcEatjwm_hwRIAwFUgkzqqusc/edit?usp=sharing)
 
 ![Boleto](https://raw.githubusercontent.com/AcheZeta/cdmx-2019-01-bc-core-am-cipher/master/src/assets/1.png)
 
 ![webApp](https://raw.githubusercontent.com/AcheZeta/cdmx-2019-01-bc-core-am-cipher/master/src/assets/Screenshot_2019-01-25%20CipherFest.png)
 
-
-Visita el siguiente documento para conocer más del proceso de  [UX Reserch](https://achezeta.github.io/cdmx-2019-01-bc-core-am-cipher/src/index.html)https://docs.google.com/document/d/1kfiqATT_zd25mmglmEIcEatjwm_hwRIAwFUgkzqqusc/edit?usp=sharing
-
-
-
-
 ## Contribuyendo 🖇️
 
-Por favor lee el [CONTRIBUTING.md]  (https://github.com/Laboratoria/curricula-js/blob/master/CONTRIBUTING.md) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
+Por favor lee el [CONTRIBUTING.md](https://github.com/Laboratoria/curricula-js/blob/master/CONTRIBUTING.md) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
 
 ## Expresiones de Gratitud 🎁
 
 * Al gran squad que fue "MemexiCode" 🔥
-* A nuetras Jedi Steph. 🌟
+* A nuetra Jedi Steph. 🌟
 * A los coach de Laboratoria. 👩‍💻 👨‍💻
 * Al Equipo y compañeras en general. 
